@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/VUI/Led0">
+        <file alias="LedGray0">img/Gray_light.png</file>
+        <file alias="LedGreen0">img/Green_light.png</file>
+        <file alias="LedRed0">img/red_light.png</file>
+        <file alias="LedYellow0">img/Yellow_light.png</file>
+    </qresource>
+    <qresource prefix="/VUI/Led1">
+        <file alias="LedGray1">img/Led_Modern_Gray.png</file>
+        <file alias="LedGreen1">img/Led_Modern_Green.png</file>
+        <file alias="LedRed1">img/Led_Modern_Red.png</file>
+        <file alias="LedYellow1">img/Led_Modern_Yellow.png</file>
+    </qresource>
+</RCC>

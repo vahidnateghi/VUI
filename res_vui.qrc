@@ -11,4 +11,9 @@
         <file alias="LedRed1">img/Led_Modern_Red.png</file>
         <file alias="LedYellow1">img/Led_Modern_Yellow.png</file>
     </qresource>
+    <qresource prefix="/VUI/LedToggle1">
+        <file alias="LedToggleGreen1">img/Led_Toggle_Green.gif</file>
+        <file alias="LedToggleRed1">img/Led_Toggle_Red.gif</file>
+        <file alias="LedToggleYellow1">img/Led_Toggle_Yellow.gif</file>
+    </qresource>
 </RCC>

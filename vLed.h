@@ -2,6 +2,7 @@
 #define VLED_H
 
 #include <QWidget>
+#include <QMovie>
 
 enum Enum_LEDState
 {
@@ -12,7 +13,10 @@ enum Enum_LEDState
     Led_Red0,
     Led_Red1,
     Led_Yellow0,
-    Led_Yellow1
+    Led_Yellow1,
+    Led_ToggleGreen1,
+    Led_ToggleRed1,
+    Led_ToggleYellow1
 };
 
 namespace Ui {
@@ -30,6 +34,9 @@ public:
 
     ~vLed();
 
+    int AnimationPercentSpeed() const;
+    void setAnimationPercentSpeed(int AnimationPercentSpeed);
+
 private:
     Ui::vLed *ui;
 
@@ -41,7 +48,14 @@ private:
     QString m_AddrLedRed1;
     QString m_AddrLedYellow0;
     QString m_AddrLedYellow1;
+    QString m_AddrLedToggleGreen1;
+    QString m_AddrLedToggleYellow1;
+    QString m_AddrLedToggleRed1;
     QString m_AddrLedSelected;
+
+    Enum_LEDState m_State;
+    int m_AnimationPercentSpeed;
+    QMovie *m_Movie;
 
 protected:
     void paintEvent(QPaintEvent*e);
